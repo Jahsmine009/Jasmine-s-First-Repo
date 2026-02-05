@@ -11,7 +11,7 @@ let p = x + y + z
 
 document.getElementById("emmanuel").innerHTML = p;
 
-document.getElementById("emmanuel").innerHTML = (5 + 3) * 16;
+document.getElementById("emmanuel").innerHTML = (9 + 7) * 16;
 
 let firstName = "Sam";
 let lastName = "Bidemi ";
