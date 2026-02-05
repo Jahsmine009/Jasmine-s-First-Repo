@@ -5,8 +5,8 @@ let c = a + b;
 document.getElementById("emmanuel").innerHTML = c;
 
 let x = 15;
-let y = 12;
-let z = 16;
+let y = 13;
+let z = 19;
 let p = x + y + z
 
 document.getElementById("emmanuel").innerHTML = p;
