@@ -1,0 +1,127 @@
+   /* CSS: GLOBAL STYLES & THEMES */
+        :root {
+            --bg: #ffffff;
+            --text: #333;
+            --accent: #007bff;
+            --card-bg: #f8f9fa;
+        }
+
+        [data-theme="dark"] {
+            --bg: #1a1a1a;
+            --text: #f4f4f4;
+            --card-bg: #2d2d2d;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            transition: 0.3s;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 5%;
+            align-items: center;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .accent {
+            color: var(--accent);
+        }
+
+        /* PROJECTS GRID (CSS Grid) */
+        .projects {
+            padding: 50px 5%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        /* BUTTONS */
+        .btn {
+            padding: 10px 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Typing effect container */
+        .typing-text {
+            border-right: 3px solid var(--accent);
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: var(--accent)
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: var(--card-bg);
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: bold;
+        }
