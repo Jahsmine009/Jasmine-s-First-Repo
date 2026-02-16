@@ -21,6 +21,5 @@ document.getElementById("emmanuel").innerHTML = lastName + firstName;
 function myfunction() {
 
 document.getElementById("sandra").innerHTML = "Hello Sir"
-document.getElementById("sam").innerHTML = "How are you"
-
+document.getElementById("sam").innerHTML = "How are you" 
 }
